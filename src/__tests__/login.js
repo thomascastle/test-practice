@@ -125,6 +125,8 @@ describe("Login", () => {
 });
 
 // THE GOOD
+// There is a bit of duplication but look at how clear these tests are.
+// The entire test should be self-contained.
 it("calls onSubmit with the username and password when submit button is clicked", () => {
   const handleSubmit = jest.fn();
   const { getByLabelText, getByText } = render(
